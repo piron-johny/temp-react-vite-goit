@@ -12,7 +12,10 @@ const TestComponentForRouting = () => {
         flexDirection: 'column',
       }}
     >
-      <p>Test Component For Routing</p>
+      <p>
+        Test Component For Routing / env ={' '}
+        {import.meta.env.VITE_REACT_APP_EXAMPLE}
+      </p>
       <Link to="/">Go home</Link>
     </div>
   );

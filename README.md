@@ -111,3 +111,24 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
    отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
    скрипта будет указано в чем проблема.
+
+## ENV Переменные
+
+В файле `.env` создаем переменную с префиксом `VITE_REACT_APP_variable_name`
+после чего, в компоненте можно получить это значение при помощи
+`import.meta.env.variable_name`.
+
+Пример:
+
+```shell
+.env file
+
+VITE_REACT_APP_EXAMPLE=env_example
+
+```
+
+```jsx
+component file
+
+import.meta.env.VITE_REACT_APP_EXAMPLE;
+```

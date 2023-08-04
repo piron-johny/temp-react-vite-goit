@@ -16,7 +16,7 @@ function App() {
       >
         <div className="container">
           <div className="logos">
-            <img src="/vite.svg" alt="vite-logo" width={100} height={100} />
+            <img src="./vite.svg" alt="vite-logo" width={100} height={100} />
             <img
               src="https://goit.global/us/assets/images/logo.svg"
               alt="go-it-logo"

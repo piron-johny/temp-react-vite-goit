@@ -1,4 +1,20 @@
+import { Link } from 'react-router-dom';
+
 const TestComponentForRouting = () => {
-  return <div>TestComponentForRouting</div>;
+  return (
+    <div
+      style={{
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      <p>Test Component For Routing</p>
+      <Link to="/">Go home</Link>
+    </div>
+  );
 };
 export default TestComponentForRouting;

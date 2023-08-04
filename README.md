@@ -74,15 +74,30 @@ export default defineConfig({
 
 ### Маршрутизация
 
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеши в начале и конце строки
-обязательны.
+Если приложение использует библиотеку `react-router-dom-v6` для маршрутизации,
+необходимо дополнительно настроить компонент `<RouterProvider>`, передав в пропе
+`router` объект соответствующий объект, созданный при помощи `createHashRouter`,
+т.к. GitHub не потдерживает `BrowserRouter`.
 
 ```jsx
-<BrowserRouter basename="/your_repo_name/">
-  <App />
-</BrowserRouter>
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <App />,
+  },
+  {
+    path: '/other-path',
+    element: <OtherComponent />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
 ```
 
 ## Как это работает

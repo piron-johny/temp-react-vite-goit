@@ -10,14 +10,21 @@ function App() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          fontSize: 40,
-          textTransform: 'uppercase',
           color: '#ff6c00',
           fontWeight: 700,
         }}
       >
         <div className="container">
-          <p>
+          <div className="logos">
+            <img src="/vite.svg" alt="vite-logo" width={100} height={100} />
+            <img
+              src="https://goit.global/us/assets/images/logo.svg"
+              alt="go-it-logo"
+              width={200}
+              height={60}
+            />
+          </div>
+          <p style={{ fontSize: 40, textTransform: 'uppercase' }}>
             React
             <span
               style={{
@@ -34,8 +41,8 @@ function App() {
             </span>
             template
           </p>
-          <Link to="test" style={{ color: 'red' }}>
-            Test page
+          <Link to="test" style={{ color: 'red', display: 'block' }}>
+            Go to the test page
           </Link>
         </div>
       </div>

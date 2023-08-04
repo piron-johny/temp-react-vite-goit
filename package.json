@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://piron-johny.github.io/temp-react-vite-goit/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

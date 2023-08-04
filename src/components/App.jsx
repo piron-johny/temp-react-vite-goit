@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function App() {
   return (
     <>
@@ -14,21 +16,28 @@ function App() {
           fontWeight: 700,
         }}
       >
-        React
-        <span
-          style={{
-            display: 'inline-block',
-            margin: '0 10px',
-            padding: '0px 10px',
-            background: '#fff',
-            color: '#000',
-            borderRadius: '3px',
-            border: '1px solid #eee',
-          }}
-        >
-          homework
-        </span>
-        template
+        <div className="container">
+          <p>
+            React
+            <span
+              style={{
+                display: 'inline-block',
+                margin: '0 10px',
+                padding: '0px 10px',
+                background: '#fff',
+                color: '#000',
+                borderRadius: '3px',
+                border: '1px solid #eee',
+              }}
+            >
+              homework
+            </span>
+            template
+          </p>
+          <Link to="test" style={{ color: 'red' }}>
+            Test page
+          </Link>
+        </div>
       </div>
     </>
   );

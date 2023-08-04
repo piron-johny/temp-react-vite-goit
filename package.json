@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://goitacademy.github.io/react-homework-template/",
+  "homepage": "https://piron-johny.github.io/temp-react-vite-goit/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

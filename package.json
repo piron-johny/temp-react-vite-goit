@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://goitacademy.github.io/react-homework-template/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
